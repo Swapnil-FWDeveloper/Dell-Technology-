@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+#box1{
+    height: 700px;
+    width: 100%;
+}
+#box2{
+height: 80px;
+width: 100%;
+box-shadow: 1px 1px 1px 1px rgb(247, 243, 243);
+}
+
+#box2>img{
+height: 50px;
+width: 15%;
+}
+#box3{
+display: flex;
+height: 630px;
+width: 100%;
+margin-top: 0px;
+
+}
+#box4{
+height: 630px;
+width: 60%;
+box-shadow: 1px 1px 1px 1px rgb(247, 243, 243) ;
+}
+
+#box5{
+height: 630px;
+width: 40%;
+margin-left: 40px;
+box-shadow: 5px 5px 5px 5px rgb(247, 243, 243) ;
+}
+h3{
+    margin-top: 0px;
+margin-left: 100px;
+}
+.box6{
+ display: flex;
+ width: 77%;
+ height: 40px;
+ margin-left: 100px;
+ margin-bottom: 10px;
+}
+.inp1{
+height: 40px;
+width: 170%;
+border: 1px solid;
+
+}
+.inp2{
+height: 40px;
+width: 100%;
+border: 1px solid;
+margin-left: 150px;
+}
+#inp1:hover{
+background-color: rgb(236, 231, 231);
+
+
+}
+p{
+color: gray; 
+margin-left: 100px;
+}
+.inp3{
+height: 40px;
+width: 72.9%;
+border: 1px solid;
+margin-left: 100px;
+margin-bottom: 10px;
+}
+#btn1{
+height: 40px;
+width: 50%;
+background-color: red;
+color: white;
+margin-left: 150px;
+}
+#box7{
+height: 40px;
+width: 78%;
+background-color: rgb(214, 214, 238);
+display: flex;
+margin-top: 20px;
+margin-left: 65px;
+justify-content: space-between;
+}
+#box7>div{
+height: 60px;
+width: 31%;
+}
+#opt1{
+    height: 40px;
+    width: 65%;
+    border: 0px solid;
+}
+#box8>img{
+height: 30px;
+width: 30%;
+
+}
+.box9{
+height: 40px;
+width: 77%;
+display: flex;
+margin: auto;
+margin-bottom: 20px;
+justify-content: space-between;
+
+}
+.box9>div{
+    height: 40px;
+    width: 45%;
+    border: 1px solid;
+    padding: 10px 1px 1px 10px ;
+    
+}
+
+
+
+</style>
+
+
+
+<body>
+    <div id = "box1">
+        <div id = "box2">
+            <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAABLCAMAAACbZQnyAAAAllBMVEX///8AfbiAgIB7e3t6enoAeLaDg4MAdbQAe7fm5uYAerf09PR3d3ff39/GxsbZ2dmjo6Pl8viUwNt+sdMpib66urqPj4+pqalHm8jw8PDOzs662Omv1OewsLCSkpKIiIiamprO5PApkMJfpcy/v7+izePKysrx+PvZ6/SeyeFdo8xsrNFPn8qHt9eoyeDR5vE8lcUDhLwWxLrkAAATt0lEQVR4nO1diXajOhLFCGNWQxYgkLAkccdZu+P//7mRSixaMe44dk8e98yc1zFC66WqVCpJhvEduL358y35zvhv49Jb7u7OXYkZPw3bx5WzcJYv567HjH8AlzfvKjy+ffy+fT4sqz+75QLDWb1pkzy/D8XdXI7kdfGwG/CuSeRPxWHt0CLPj5XTIfDPU+xXcbVyVPC85dJbXL/dbyfn9OI5C4rlw4Umzf3C64tYXY1kdnHdZbZYeDfqNBvTngYzmtyIMSTINpOj5HQI3No07fDkxX4ZV8uFFo6zXH5e6kjCY/vmDS961/fqVPeLgS/LcWIxuWmIlSFzGqzj0CHG5QVHyekQhKTU9cmL/TLGiEUVm3M5QWo9P3D5eItfymTHJVaABHw/sdBRcjoEIWnADyQWxmr/RO+343CvOKtPJRuPSiw3KwU0wKNaRJpP6op9+HnEyss4/i7lPoFYC8d7GxdaV474wpX6haMSS0Zu46FPvst4/3nESojMd78n7ynEwkLrZsTSunhf8cTyVmpF+O3E8jGxguNY6gr8QGIR4+GsxFp4O63v4XYnZLH81KadiXUwfjixMCE0bLn0BD241KhBgplYB+OnE2vhXKu04fZNVIML1vG+fbzlks/EOhjfSawNtrHsExBrueqxFOUQ0XCyJPpzLfByxXmw7q9XK26BZybWwfhOYvlRVHwTr1hiLa9+dXi5vHrwRFm2lJZqXgRxtVhx00fy2OF+mol1MH6AH2vFqa3tn7cd40yXExBn+6gavFrC4yUzo5yJdTB+HLEwnh9XHHGca1YeXTyIs8Edqwa3n93Ly+s+Rmsm1sH4icQyjFveo778GB7dLcXZ4CP35nIQd57XSbKZWAfjZxLLuN9x9Nn1Wu1DUJPOgouCuRQZSWXdWYnl5wT73PA4lesqkwnEIgmnRLRMTKdLMEasKWsKPm4OLn9/QuGdPVWmSUay3UMs45aXSq3I2t4I8srj1KDxKj5uvWDnI1a+iSsSgFJXcaKXafkmw6kQMusq24i9xhLL3cSpbUK6QhoAZkzcBKej+RX6akdJ1mBkiZyXjlh5Ucb0nWiEAKSaJgoCVDdlH3oThn3LCDtU79gowHVuSk2do7LBvWTh3myyJ03x+4hl3HF21g4kj+hsd1bvrPX1LDkhPltJdy5iRU1gdbEPCAVmovzUCiYV7reg4vt1IBbOrg+lwEOQ8H0bBYHldhky6TTBXEVjkSU7k4RnBEEjjqWKWP5ThWtKsibvWLHmSwljrtUpTZYEQRf8U+B/mnxXRJXQUzJv1jbTKtxNsTJabC+xeBeqRwIdRGe743Fq8NdOsL6GJenzECtvxIgaZG+kVG5FUw0ROAilbJ91xPLjdki7QB1Uc2U+WWZQ9MVy6WSnUZTydUNCZipiPdl8cxCqFGPrZ5AzHnqrLcKKfdqMoGWL5Hl35Z4yn8Ruskyxm0qF1NpPrC1LI+9RdrY7vBr8ENSg4wxL0mchVkTHAcv2NE1rm/YG7WQGTyaiiZoyScq4NulLDAFbYuUpli5mSpIlXTKTlTOYWAgLJ5ekwzoow+myFOqAbLFyZV+1Kk3bqvHjJBErjy3pHSRLQ7+xgMtNsl5vyoaWn+KcU1NLrLanLBtnXaVt26yMq05NG1KRZpUxbZfVyMzaTyzMFIYli3vRy9DrOcD2nXdR8E6IP2cgVgHdE1TrkLTed6PMUnRGAsMQZP2n7yYwZFbZJ6HEymv8oSb9aIRNANkzw0OIFZN0ZhD3BpCbQDphZQ4G30IJVM3Io5JWrWKqJhIrh5EN6rXbvpMFtDlCV6Qk8jTty8+falwWqgzD0hIrAsYG6RPN2g8T0xKzJmRD5rrXn7SbrNgQMYFYzztW/ojyaMWpwXvJ+npkra9XZi55ImJFAQwVqyv8EljUMD9t6C+cveHHMGK9LKDEalDAS/4CCJMOv2FimY2B+VdxLCISDEsQtoAKOM9qZR9EGKqH3ARi5TbkwkrIPJOG3zAga16DkjZaZR7oiBVRocZp1TUUN2RNqod4Ye83hMKSmT+BWMa7tG44DPo199IvMZLUY+Oan29Y1p2GWCT2z5SMgIL+2v8dWvzfLaDjra6ngWcNpx0BMCDW8Cshlo0NNlE/5CmRB4zJAhmKi8ARVG2QADyxYBSFD6AVylz1Sc0lvUs+ARsqoSKWX5sSacDyZBqXI/4b6l/kvlLAFGK9CNptwOrmWZMZ5RUX+n7PTxZPQyyy48KSGGNEnP4C0aFIBW/3fRZTk0NOlvDd/URtoEqyO8KAT0dek+151+KoxBOLyFokjmzHrKHlIJZkX8ETVcdqYlFhJL1D+rRPRJqGnsQkpCFInGdPIdazhljO6oNNdvEgpFtxEX/iivVJiBUi1ddk0D7uH6wDan7IIL3a5QjEUmZGUln9OLbEUoQNEJ4GnQD0YZQV0zmQgL0XgCNWCFxUzMHWIHL7P3FVZflr9BubVMRyedYPcJlWw4cmpSHdbok0nkKsi91CBUEN3gpeBodb4+mWpE9MLKI51BFH8TDIfiqb1S0KhphALKWbbENSZd1fQCykcloBzbsBTxCnQBmQiUSfHUcs0hxL6bXK2Nxc0mqV49K3tMQqWdJL1Wk/AOgCOUWt2Ak1hVjbB6WRdc2pwcuF6GVgrfqLdymg8BTEcpWmE4AZ5IjjBZ8jMTxqKj2gV5VyjRRj9mY5EMtSumCJaGuGupq1KhEttBt8llhEqii0FQFn/ZQagdWJLAWxcqWhNDyi3aMhVoOQ9IlMItanklgeowi3r1IkKevcehbj4k9ELKIhdNtQ0n4kYLqnSQWWB80SkilFDBV5HZWAWKkyN5JFS1PQxZo1QJi/tc9YYumlSvssGpqmbk+ok1gFqY5mBYdkbcG/1KqQBAxKYnQSsW48iRZAjX4hR7DLsRrktvXcyfGopyEWVh2az7AlHYxSoP1YibcCoXYmN8I/oqJ6c4kQS63jqFfD7V9RqiuDaqyuRgyxgL9qIUfVXytXwkEuSqg1xALKa6pDBCVVwGul8a7EFyQWiVam9LkTzSt+X+GH8vVTEAtpjB2CfsSIr0GbykiyrBxUoSZsJhvkWjt1Ui/fFT2ZR1RPW1QrARliuaMVrXsJjIdfowk7Q1EmVjpCRsPsRDXMWOtJoRKTjPdrnSNr+UDsrEthNuis2K3TkpY8HbHIrFuarvQPO9OBEGFKFBd81OpHoDC7gsCPpdFEQafLiImnD7NaD3qNIdYIY9s6UJbgimpbDdNHmVjQGVrOEsFPTTv4uCqN2cBhErEcrYfUce4vPsVFHM6ql/ZbnJBYxOseaHuham1xsE4mRDbFer0qEUvzVYc9hzcj1h9lUzvODLGIXLS14oIsyFDfFSZJoEsGvjSZWFCKVseR5tFZS06Nf3VAA4cpxLrVOkiJD/RaXON548wrMXD+lMQCWaQdiaa1WEYkEYcY6aZkMrFUDiGDJVaGxnSKb3IGU0usZsTEamfAQEZi4+k+FFetCsnEWCvlIF1rgNF1amSmWTQeCTiFWG+szBGFl3RsA+c0fRGXFk9KLBALG1eNiBgltkHHS+lFEECIpXZK/AWxiO2uSURg9xYYQ6xRO2hQ7cT0t7WpbCWxwPiLw0gNmPR27o+0DZsJzCpb65XiBGJtWZnkKBwHDLwdm4kUYbPcnTS6AToOBWpA/5ABqMbMaAZHJdY4SeAxJftALFiT04hMg84ZoR25pfN2GJR+GmKN99TgZdjYAXXgk2BIFK/VcncCse4YZeYsLkSysPKIPzxE2sez+mDiUU9FrFHY7YDox2vAUYk1OilspSjkIRBLUwHyuGq5+tfEGgWrXIu47oNI8X8b1YRiArEeWGK9K05rGCjAbWm9v+bNK2/3izXX/gViIfNcxLL3EysViAW6TudGMIbJyBeIJZ5kx4Cf3uRh0tR2G8SMUCxLrf3E4oLe4Ujk24XSIPf485JfBP4tye770xKLRlmllRZpSb/006vCPRKr+juJ9TVVaFaNHrIvwneLrG71pOxe2UssbgUaa0L4TQwThWf82qFkXsGS9GmJtR71KHY4i/EONpbeeFfaWOOitX9MjHft5FFjvEfqmJn9yDeVKjR2P7G2r9xeitfuNUlmOTv2ToqLV2GNp912eFpiFZOIdYi74eyzQv0XMGjKQLmgR6FxN4Dj7G+IhTu9gAjBRvh5H7F4V4PXryz/kv0OTOz7H8Fs7yeLpyUW8QaOWSUUhzhIj0asUhvPQ6DxY41+AZAQFl7Mwx2kLhN3cTBolK5gwe8h1iun83qBZUjnJC/YTau3vBrEk8Vt/+SUxIJYuhGFQ0EsMV3MAIujEmt8HSkcoqsYYo2TkYhnq5OG2qw1Szo0POhvD2uNFOGUo8S6/+TI43i8FSWqQ689XlnYAOY4g8/0tMSia/n71kyjUYXpbtZr2uFHJRazaKPAZoiPYYgFml3rHs962mG+aLPONIvQXHzGwSBmqrA+P0Ksiyth9sdHIuN5n7iG6JD9rFthf723YPL9O2Ipz55U/CgRC2KB9Xvb27fGwmb8KrDaHI5KLJidaeduMMw0Cza6QR+QaNAgQjqRjPRrT2CnqYgFUavqWB8GZRwrLQuI2OI/YA2xtve/Xz3xAIYHMb/7hbh7YnUpqsgVd/8Ju+x4/fj4+gj/H/6D/we+MJZYi92DEvIFdhKxipHJTp7FzWAU647izAfz4ajEovErukKZSFE2HosIBkv9ClVHdNQJaTWL1dpAP9inpDHg/KapoOEuQshSiTWiYIUH7MYacoUOQXuVjrhRXnEIqSidyJFF/A+ClOPWs9vieCx3JB1HrIXyth9HvlZFIhbdYqKW8LGF2r14a0svCciz+htUIURejGXXLQmzEaQbfQghCLnOUiRxM+pkpS40Gfz2GsusDEwEio4wVhlyP9h3PbgdW8OwLSQ4C+X9OJe64AVKM/Hqk7FAibaca5KOJ5YynaI+8maKTGFWUuRDECCoJY30qAbZcVxiQTioOjIepmidycISC/ZCqE1skDhN+0eh82T5+l064EyWt6wZrR8D+gB8sCrrbY/EGh1H3YLPraOn1lK6rOnUxAq1O2vY+PFSS7+CiSQ/LrFo6IVSTRMt2e964XbpaHZJGq3A6moAvlKVyCr1xALOKeVcMswZMo3DY9zGGoNw/hWLixvttsNHycA+NbFoVyoi6iLWYqfuaMWn6LOMOzKxDF2hZEo4yCWOWDmsnygCTzPYyNr/WagjHIuxDat0/Uue6cC32WYdqUNy6WYS/rdpxBq5bAIbWh/KPIQz/ihOTizgjFmLZpZbc5IMelwW8jnskGa22B+VWHRjqsSSgh9gfif0Gil8kd1qO8MkUnFpkzXs3tcSix73IDEL7ISeTJUyiHUzTBx6TLqkabnnkibZDS9GZnU4ObHacbL5/oLDeFg9RHc5CwcXhCmrk45OLNgvL2kfkFeMuhMOBYEDQAQ2+mXAJ2rDSYWTtgpYedGe3WCEwDtBhUIfDD0Fgj4VGFuoFgv3E8tZPehCS3uISzhiZFaP0xOLbuQ1AyZoyIWB4I9AoKdJmcP5REaYwerHQKWjE8ugJVTsIhQca8aeCiQeY0RPPmoYEVzUlqxU4TQHNjY9aignQFS3v4nHGIGmtNLh9EeXnsvDbFOjP7Dn/Lm0FSM7oXW00l3lxWL7JvjoP9TpzkAsKgPwhNnO1lEYFUlKj1ireIkOZCPB3OU6iopNVtPjsZj+Oj6x6DBh0ZKEbp67YUKP9+NKkQ5eo8IVpRv8jutGZY0UgoYce0LqhOpsU+DmxHBAG7LzfIRY9B3SCU3yVBTrrK0Od98jZRZOEYVhGK27fpJmIaPE8pa7m7uJt0KzW+wdpRokOAexuoPqTGRZQXfCpnTIUH8AI0ll0VT8OVTfQCx6/hQp0667uDnEHZilOCoyMYd3TFVF2xdT1DenPcWwcdt5SpeT6KQNqz7o2Gr7AHOG/wLXbfE4166fVLPbq9VSCXKhzuL19wEX2Q9u+JXyPifAnaY4pmDqIN2t9kJBLNxUlW8hzwIu9BYFss1M7hu1hrNtTfnU2gb3pG6XzrBfmpxdg5BmPTck6bgKunGA+KoJh1+FmBXCndBuw79jBapDQA1/g5h0+N+EsHDMRLfVglyEafG20ZrrA/KWtCnMZc7MpWlsxarZ7aUaL3cHXGBPsX2nbvix6+mfNcWxJUNet3d7oaifWxRq57G/qVB7hbQVmLFu+bDIcLKACDZUSWdRR3Gs20/n4kc9C/MsjnUHs5dxnAmTqjyhRyBD1dJEnMqRVyTeuEnavmMFqNlooxIKrM1gPwRK2+PA4bSipq9plkm8KWK7z9tW91S+aWzSTRbpqTT7tisbepBoeEdzz/i54efRpszirKRnkWqT+S7Z8OQe677fKfDzIinxGCfFhPsIhndwc7JyE40Hb+D2hFE4NAciJPaEqPkhrk9ZJsVIT+FuKtabdbFnd+GxcOusJGf7jH8JcCrX/+ENKhcj16vO+AfwtbirGTPU+Fqk6Iz/PLCNpDSpI3PiXrcZMxQoiFtD9QBCaqednDZjhgQ4jlshsmB3ybSD02bMUMBWh6eWijCEGTOmo1RO/ugdGrPAmvHXgIhAUefBdRy6mPkZM6YA4kG5gCx/Y85TwhlfBtxqiOKnVmrlG4j0UtzwM2PGQYghmtEK7LRpKjtowx1nXs34Kta1cEyfZe89eWfGjP3IN6nZ3QeNLFSX83xwxpHgFklcpXXaZOPRQkfE/wAuippY+dqDlAAAAABJRU5ErkJggg=="/>
+        </div>
+        <form>
+        <div id = "box3" >
+            <div id = "box4">
+                
+                <h3>Your Details</h3>
+                <hr  style="width: 77%; margin-top: 0px;">
+                <p>Required to Save Cart and Send Order Updates</p>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1" type = "email" placeholder="Email address">
+                    </div>
+                    <div>
+                        <input class ="inp2" type = "number" placeholder="Mobile number">
+                    </div>
+                </div>
+                <p>Would you like to receive notifications on WhatsApp?</p>
+                <input class = "inp3" type = "number" placeholder = "WhatsApp Number (Optional)"\>
+                <h3>Delivery Details</h3>
+                <hr style="width: 77%;">
+                <p>We will deliver the order at the below address</p>
+                <input class = "inp3 recep" type = "text" placeholder = "Recipient's Name"\>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1 recepno" type = "number" placeholder="Recipient's mobile(optional">
+                    </div>
+                    <div>
+                        <input class ="inp2 pin" type = "number" placeholder="Pincode">
+                    </div>
+                </div>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1 house" type = "text" placeholder="Apartment/House/Flate No.">
+                    </div>
+                    <div>
+                        <input class ="inp2 street" type = "text" placeholder="Street/Colony/Area Name">
+                    </div>
+                </div>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1 locality " type = "text" placeholder="Locality / Town">
+                    </div>
+                    <div>
+                        <input class ="inp2 landmark" type = "text" placeholder="Landmark (Optional)">
+                    </div>
+                </div>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1 city " type = "text" placeholder="City / District">
+                    </div>
+                    <div>
+                        <input class ="inp2 state" type = "text" placeholder="State">
+                    </div>
+                </div>
+                <input class = "inp3 GST " type = "text" placeholder = "GST Number (Optional)"\>
+                
+                
+
+
+
+
+
+
+            </div>
+            <div id = "box5">
+                <div id = "box7">
+                    
+                    <div id = "box8" ><img src = "https://cdn.pixabay.com/photo/2020/09/14/20/39/vans-5572117__340.png"/></i></div>
+                    <div>Estimated delivery date </div>
+                    <div><select id = "opt1">
+                        <option>View</option>
+                        <option></option>
+                    </select></div>
+                </div>
+                <p id =  "para">Man </p>
+                <hr style="width: 77%;">
+                <div class = "box9">
+                    <div>ORDER SUMMARY</div>
+                    <div>View Details</div>
+                </div>
+                <div class = "box9">
+                    <div>Total items</div>
+                    <div>Price</div>
+                </div>
+                <div class = "box9">
+                    <div>Total Payable</div>
+                    <div>Amount</div>
+                </div>
+                <input id = "btn1"  value = "PROCEED TO PAYMENT">
+
+
+
+            </div>
+            
+        </div>
+
+        </form>
+        </div>
+
+
+
+</body>
+</html>
+
+<script>
+    let paymentPage=document.querySelector("#btn1")
+    paymentPage.addEventListener("click",()=>{
+        window.location='./PaymentPage.html'
+    })
+</script>

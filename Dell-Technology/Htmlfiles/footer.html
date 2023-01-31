@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1{
+            margin: auto;
+            /* border: 2px solid red; */
+            width:90%;
+            height: 900px;
+            background-color: whitesmoke;
+        }
+        .container-1>div{
+            margin-left: 50px;
+        }
+        .container-2{
+        display: grid;
+        height: 500px;
+        grid-template-columns:repeat(4,1fr);
+        /* border: 2px solid green; */
+        text-align: center;
+        gap: 10px;
+        }
+        .container-3{
+            /* border: 2px solid black; */
+            width: 200px;
+            text-align: justify;
+            color: gray;
+
+        }
+        .container-3+p:hover{
+            cursor: pointer;
+           
+        }
+        .container-3>p:hover{
+            cursor: pointer;
+             border-bottom:1px solid rgb(110, 114, 110);
+            width: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="container-2">
+            <div class="container-3">
+                <p style="font-weight: bold; color: rgb(104, 99, 99);">Account</p>
+                <p>My Account</p>
+                <p>My Products</p>
+            </div>
+            <div class="container-3">
+                <p style="font-weight: bold; color: gray;">Support</p>
+                <p>Support Home</p>
+                <p>Contact Support</p>
+            </div>
+            <div class="container-3">
+                <p style="font-weight: bold; color: gray;">Connect with Us</p>
+                <p>Community</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="container-3">
+                <p style="font-weight: bold; color: gray;">Our Offerings</p>
+                <p>Apex</p>
+                <p>Products</p>
+                <p>Solutions</p>
+                <p>Services</p>
+            </div>
+            <div class="container-3">
+                <p style="font-weight: bold; color: gray;">Our Company</p>
+                <p>Who We Are</p>
+                <p>Careers</p>
+                <p>Dell Technologies Capital</p>
+                <p>Invester</p>
+                <p>Newsroom</p>
+                <p>Prespectives</p>
+                <p>Recycling</p>
+                <p>ESG & Impact</p>
+            </div>
+            <div class="container-3">
+                <p style="font-weight: bold; color: gray;">Our Partners</p>
+                <p>Find a Partner</p>
+                <p>OEM Solutions</p>
+                <p>Partner Program</p>
+                
+            </div>
+            <div class="container-3">
+                <p style="font-weight: bold; color: gray;">Resources</p>
+                <p>Blog</p>
+                <p>Events</p>
+                <p>Dell Learning Centre</p>
+                <p>Glossary</p>
+                <p>Privacy Center</p>
+                <p>Resource Library</p>
+                <p>Trail Software Downloads</p>
+            </div>
+        </div>
+<div style="margin-top: 30px;color: gray;">
+    <span>Dell.com</span><span style="margin-left: 50px;">Dell Technologies</span><span style="margin-left: 50px;">Premier</span>
+</div>
+
+<div style="margin-top: 20px;">
+    <span style="color: gray;">Copyright © 2023 Dell Inc.</span>
+    <span style="margin-left: 50px; color: gray;">Terms of Sale</span>
+    <span style="margin-left: 50px; color: gray;">Privacy Statement</span>
+    <span style="margin-left: 50px; color: gray;">Legal & Regulatory</span>
+    <span style="margin-left: 50px; color: gray;">Accessibility</span>
+</div>
+    </div>
+</body>
+</html>

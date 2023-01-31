@@ -1,0 +1,259 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#header_1 {
+  text-align: center;
+}
+#header_1 > p:nth-child(1) {
+  color: grey;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: -10px;
+}
+
+a {
+  text-decoration: none;
+  color: #006bbd;
+}
+
+#cart-section {
+  display: grid;
+  grid-template-columns: 62% auto;
+  padding: 20px 50px 10px 50px;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+.section > div {
+  width: 33.3%;
+  font-weight: bold;
+  color: grey;
+}
+.section > div:nth-child(2) {
+  text-align: right;
+}
+.section > div:nth-child(3) {
+  text-align: right;
+}
+.item-section {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+.item-section > div:nth-child(1) {
+  width: 30%;
+}
+.item-section > div:nth-child(2) {
+  width: 70%;
+}
+#details {
+  display: grid;
+  grid-template-columns: 45% 25% 30%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#select-box {
+  width: 75%;
+  height: 30px;
+}
+#price {
+  text-align: right;
+  font-size: 13px;
+}
+#text-details {
+  border: 1px solid lightgrey;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#text-details > p:nth-child(1) {
+  color: #b7295a;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#text-details > p:nth-child(2) {
+  font-size: 14px;
+}
+
+.item-total {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.green {
+  color: green;
+  font-weight: bold;
+}
+.item-total > button {
+  background-color: green;
+  color: white;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  outline: black;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #006bbd;
+}
+
+#showes {
+  display: none;
+}
+
+#coupon-box > input[type="text"] {
+  width: 62.5%;
+  height: 30px;
+  border: 1px solid lightgrey;
+  outline: none;
+  padding-left: 5px;
+}
+
+#coupon-box > button {
+  width: 35%;
+  height: 34px;
+  border: 1px solid lightgrey;
+  color: #006bbd;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#cart-details-price {
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+#price-heading {
+  color: #b7295a;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.item-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.clr {
+  color: #444444;
+  font-weight: bold;
+}
+
+#txt {
+  font-size: 14px;
+}
+#checkout {
+  width: 100%;
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+#shopp {
+  width: 100%;
+  height: 35px;
+  color: #006bbd;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+#caption {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0px 10px 0px;
+}
+
+#img-section-cap {
+  display: flex;
+  flex-direction: row;
+}
+
+#img-section-cap > div {
+  width: 33%;
+}
+
+.three-div-1 {
+  width: 75px;
+  height: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  background-position: 0 -3px;
+  background-size: 140%;
+}
+
+.three-div-2 {
+  width: 58px;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-position: 0 -51px;
+  background-size: 190%;
+}
+
+.three-div-3 {
+  width: 82px;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-position: -4px -113px;
+  background-size: 135%;
+}
+
+.img-url {
+  background: url(https://i.dell.com/sites/csimages/App-Merchandizing_responsive_Images/all/buy_payments_3ds_sprite_logo.png)
+    no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  #cart-section {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .item-section {
+    flex-direction: column;
+  }
+  #img {
+    display: none;
+  }
+  #details {
+    display: grid;
+    grid-template-columns: 75% 35% 30%;
+  }
+  #coupon-box > button {
+    width: 34%;
+  }
+}

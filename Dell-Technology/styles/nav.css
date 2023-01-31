@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#first-navbar {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  display: flex;
+  height: 70px;
+  gap: 100px;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+.logo > img {
+  /* border: 2px solid red; */
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  margin-left: 24px;
+}
+.search-box {
+  /* border: 2px solid red; */
+  height: 40px;
+  width: 550px;
+  text-align: center;
+}
+
+.search-box::placeholder {
+  border: 10px solid white;
+  text-align: start;
+  margin-right: 150px;
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.right-corner-side-nav {
+  /* border: 2px solid black; */
+  /* margin-right: 50px; */
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  width: 650px;
+  gap: 20px;
+  /* padding: 10px; */
+  align-items: center;
+  justify-content: center;
+  color: rgb(175, 168, 168);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.right-corner-side-nav > a {
+  text-decoration: none;
+  color: gray;
+}
+.second-nav-bar {
+  height: 40px;
+  width: 870px;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  justify-content: space-around;
+  /* gap: 100px; */
+}
+.second-nav-bar > a {
+  text-decoration: none;
+  color: gray;
+}
+.second-nav-bar > a:hover {
+  border-bottom: 2px solid teal;
+}
+.third-nav-parent {
+  background-color: white;
+  height: 100px;
+}
+.third-navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-left: 120px; */
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.third-navbar > div {
+  /* border: 2px solid red; */
+  text-align: center;
+  width: 90px;
+}
+
+.third-navbar > div:hover {
+  text-align: center;
+  width: 90px;
+  background-color: rgb(211, 207, 207);
+}
+
+.third-navbar > div > img {
+  height: 50px;
+  gap: 10px;
+}
+
+.third-navbar > div > p {
+  color: gray;
+}
+
+#Laptop-img > img {
+  /* border: 2px solid red; */
+  height: 500px;
+  width: 1050px;
+  position: relative;
+}
+
+.img-2 > h1 {
+  background-color: whitesmoke;
+  padding-top: 7px;
+  text-align: center;
+  height: 60px;
+  /* border: 2px solid red; */
+}
+
+.img-2 > div > div > img {
+  margin-top: 10px;
+  width: 420px;
+}
+
+.img-2 > div > div > img:hover {
+  filter: brightness(0.5);
+}
+
+.img-2 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-2 > div > div > p {
+  height: 40px;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.first-img {
+  margin-top: 10px;
+  background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/heroes/republic-day-cons-dell-xps-9315t-uhp-2304-12-in-homepage-hero-lf-2400x696-lr.png?fmt=pjpg&pscan=auto&scl=1&hei=696&wid=2400&qlt=100&resMode=sharp2&size=2400,696&op_usm=1.75,0.3,2,0");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+.first-img > div {
+  margin-left: 27px;
+  padding-top: 80px;
+  letter-spacing: 1px;
+  font-size: larger;
+  font-weight: lighter;
+}
+
+.first-img > div > p {
+  width: 700px;
+  font-size: xx-large;
+  color: gray;
+}
+/* .bottom-grid-img {
+        /* border: 2px solid red; */
+/* } */
+.bottom-grid-img-1-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* border: 2px solid red; */
+  gap: 20px;
+}
+.bottom-grid-img-2-div {
+  margin-left: 30px;
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 600px;
+  height: 150px;
+  justify-content: center;
+
+  gap: 10px;
+}
+.bottom-grid-img-1-div {
+  background-color: 2px solid black;
+}
+.bottom-grid-img-3 > img {
+  height: 100px;
+  margin-top: 15px;
+  /* border: 2px solid red; */
+}
+.bottom-grid-img-4-p > p {
+  margin-top: 15px;
+  /* border: 2px solid red; */
+  width: 320px;
+}
+.container-1 {
+  margin: auto;
+
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 900px;
+  background-color: whitesmoke;
+}
+.container-1 > div {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.container-1 > div > div {
+  margin-top: 50px;
+}
+.container-2 {
+  display: grid;
+  height: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  /* border: 2px solid green; */
+  text-align: center;
+  gap: 10px;
+}
+.container-3 {
+  /* border: 2px solid black; */
+  width: 200px;
+  text-align: justify;
+  color: gray;
+}
+.container-3 + p:hover {
+  cursor: pointer;
+}
+.container-3 > p:hover {
+  cursor: pointer;
+  border-bottom: 1px solid rgb(110, 114, 110);
+  width: 150px;
+}
+
+.dropbtn {
+  padding: 8px;
+  font-size: 0.8rem;
+  border: none;
+  color: gray;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 0.8rem;
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  /* background-color: #3e8e41; */
+  border-bottom: 1px solid gray;
+}

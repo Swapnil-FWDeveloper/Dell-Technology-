@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button type="submit">Login</button>
+      </form>
+</body>
+</html>
+
+<script>
+    let loginForm = document.getElementById("login-form");
+  loginForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    let username = loginForm.elements.username.value;
+    let password = loginForm.elements.password.value;
+    if (username === "Swapnil" && password === "123") {
+      alert("Login successful!");
+    } else {
+      alert("Incorrect username or password");
+    }
+  });
+</script>

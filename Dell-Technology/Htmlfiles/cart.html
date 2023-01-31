@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/cart.css" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <div id="header_1">
+          <p>Cart</p>
+          <p><a href="#">Sign-in to view saved carts</a></p>
+        </div>
+      </div>
+      <div id="cart-section">
+        <div>
+          <div class="section">
+            <div>Item</div>
+            <div>Quantity</div>
+            <div>Price</div>
+          </div>
+          <div class="item-section">
+            <div id="img">
+              <img
+                id="main-img"
+                src="https://i.dell.com/das/dih.ashx/400w/sites/csimages/app-merchandizing_images/all/indhs-inspiron-5420-with-backpack.png"
+                alt="product"
+                width="187px"
+                height="134px"
+              />
+            </div>
+            <div>
+              <div id="details">
+                <div style="line-height: 8px">
+                  <p>New Inspiron 14 Laptop</p>
+                  <p style="color: #006bbd; font-size: 14px">
+                    <span>Edit </span><span>| </span><span>Save for later</span>
+                  </p>
+                  <p style="color: #006bbd; font-size: 14px">
+                    > Show Full Specs
+                  </p>
+                  <p style="color: #006bbd; font-size: 14px">> Show savings</p>
+                </div>
+                <div>
+                  <select id="select-box">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                  <div>
+                    <a href="#" style="font-size: 13px">Remove</a>
+                  </div>
+                </div>
+                <div id="price">
+                  <p>₹ 87,989.97</p>
+                  <br />
+                  <p style="color: #b7295a">- ₹ 15,000.00</p>
+                </div>
+              </div>
+              <div id="text-details">
+                <p>No Cost EMI Available</p>
+                <p>
+                  This item is eligible for No Cost EMI. Proceed to checkout to
+                  see how much you will save.
+                </p>
+              </div>
+              <div>
+                <div class="item-total">
+                  <p>Item total:</p>
+                  <p>₹ 72,989.97</p>
+                </div>
+                <div style="font-size: 13px">
+                  Includes a 1Y In-Home Hardware Service
+                </div>
+                <hr style="border: 0.01px solid lightgrey" />
+                <div class="item-total">
+                  <p style="font-size: 13px">
+                    Upgrade to 3Y Premium Support and Onsite Service
+                  </p>
+                  <p style="font-size: 13px">₹ 10,797.00 Per System</p>
+                </div>
+                <div class="item-total">
+                  <p style="font-size: 13px">Dell Recommended</p>
+                  <button>Add To Cart</button>
+                </div>
+                <div>
+                  <button class="show btn" onclick="show()">
+                    Show details
+                  </button>
+                  <button class="hide btn" onclick="hide()">
+                    Hide Details
+                  </button>
+                  <p style="width: 374px; font-size: 13px" id="showes">
+                    Upgrade to 3Y Premium Support and Onsite Service to get 24x7
+                    access to expert hardware & software support online and over
+                    the phone and onsite support after remote diagnosis*.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span style="color: #444444; font-size: 18px">Coupons</span>
+          <div id="coupon-box">
+            <input type="text" placeholder="Enter your Coupon" /><button
+              id="apply-Coupan"
+              onclick="applyCoupan()"
+            >
+              Apply Coupon
+            </button>
+          </div>
+          <div style="padding: 10px 0px 10px 0px; font-size: 14px">
+            <span style="color: #006bbd"
+              ><a href="#">Chat with an agent</a></span
+            >
+            or Call <span></span
+            ><span style="color: #006bbd"><a href="#">1800-425-4002</a></span>
+            for additional<br />
+            help.
+          </div>
+          <div id="cart-details-price">
+            <span id="price-heading">₹ 15,000.00 Total Savings</span>
+            <div class="item-price">
+              <span>Items (1 Item)</span>
+              <span id="Total-Prize">₹ 72,989.97</span>
+            </div>
+            <div class="item-price clr">
+              <span>Total Order Value</span>
+              <span>₹ 72,989.97</span>
+            </div>
+            <div id="txt">Above prices include Tax and Shipping</div>
+            <br />
+            <div style="border: 0.1px solid lightgrey"></div>
+            <button id="checkout">checkout</button>
+            <hr />
+            <button id="shopp">Continue Shopping</button>
+            <div id="caption">
+              <span><a href="#">Save Cart</a></span> |
+              <span><a href="#">Email your Cart</a></span>
+            </div>
+            <div id="img-section-cap">
+              <div class="three-div-1 img-url"></div>
+              <div class="three-div-2 img-url"></div>
+              <div class="three-div-3 img-url"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="NewCartData"
+      style="display: grid; grid-template-columns: repeat(4, 1fr)"
+    ></div>
+  </body>
+</html>
+<script>
+  let checkoutdata=document.querySelector("#checkout")
+  checkoutdata.addEventListener("click",()=>{
+    window.location="./checkoutPage.html"
+  })
+  function show() {
+    document.querySelector(".show").style.display = "none";
+    document.querySelector(".hide").style.display = "block";
+    document.querySelector("#showes").style.display = "block";
+  }
+
+  function hide() {
+    document.querySelector(".show").style.display = "block";
+    document.querySelector(".hide").style.display = "none";
+    document.querySelector("#showes").style.display = "none";
+  }
+
+  let originalPrice = document.getElementById("Total-Prize").innerText;
+
+  function applyCoupan() {
+    let afterdiscount = originalPrice;
+    let couponCode = "Swapnil30";
+    let discountPercentage = 0.3;
+
+    if (couponCode === "Swapnil30") {
+      let discountedPrice = afterdiscount - afterdiscount * discountPercentage;
+      console.log(discountedPrice);
+    } else {
+      console.log("Invalid coupon code");
+    }
+  }
+
+  let LocalStorageData = JSON.parse(localStorage.getItem("cartdetail")) || [];
+  console.log(LocalStorageData);
+  let NewCartData = document.querySelector("#NewCartData");
+  console.log(NewCartData);
+
+  function appendData(data) {
+    NewCartData.innerHTML = "";
+    data &&
+      data.map((el) => {
+        let ParentDiv = document.createElement("div");
+
+        let image = document.createElement("img");
+        image.src = el.Image;
+
+        let Name = document.createElement("h4");
+        Name.textContent = el.Name;
+
+        let Price = document.createElement("h5");
+        Price.textContent = el.Price;
+
+        let Garphics = document.createElement("p");
+        Garphics.textContent = el.Garphics;
+
+        let Storage = document.createElement("p");
+        Storage.textContent = el.Storage;
+
+        let btn = document.createElement("button");
+        btn.innerText = "Delete";
+        btn.addEventListener("click", () => {
+          remove(el);
+        });
+
+        ParentDiv.append(image, Name, Price, Garphics, Storage, btn);
+        NewCartData.append(ParentDiv);
+      });
+  }
+
+  appendData(LocalStorageData);
+
+  function remove(el) {
+    let againLocalData = JSON.parse(localStorage.getItem("cartdetail"));
+    let filteredData = againLocalData.filter((ele) => ele.id !== el.id);
+    localStorage.setItem("cartdetail", JSON.stringify(filteredData));
+    appendData(filteredData);
+  }
+</script>
